@@ -95,7 +95,7 @@ public class MainActivity extends BaseActivity {
         img_send.setImageResource(R.mipmap.frag_send_press);
         lab_send.setTextColor(getResources().getColor(R.color.press));
         transaction.add(R.id.main_fragment, new SendFragment());
-        txt_top_title.setText("添加寄件信息");
+        txt_top_title.setText("添加揽件信息");
         transaction.commit();
     }
 
@@ -104,7 +104,7 @@ public class MainActivity extends BaseActivity {
             case R.id.total_bottom_ll_send://寄件
                 transaction = getFragmentManager().beginTransaction();
                 closeAllToNormal();
-                txt_top_title.setText("添加寄件信息");
+                txt_top_title.setText("添加揽件信息");
                 img_send.setImageBitmap(null);
                 img_send.setImageResource(R.mipmap.frag_send_press);
                 lab_send.setTextColor(getResources().getColor(R.color.press));
@@ -118,7 +118,7 @@ public class MainActivity extends BaseActivity {
             case R.id.total_bottom_ll_consignee://收件
                 closeAllToNormal();
                 transaction = getFragmentManager().beginTransaction();
-                txt_top_title.setText("添加收件信息");
+                txt_top_title.setText("添加送件信息");
                 img_consignee.setImageResource(R.mipmap.frag_consignee_press);
                 lab_consignee.setTextColor(getResources().getColor(R.color.press));
                 transaction.replace(R.id.main_fragment, new SendFragment());

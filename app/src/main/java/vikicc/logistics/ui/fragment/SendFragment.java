@@ -566,8 +566,18 @@ public class SendFragment extends BaseFragment implements AbstractSpinerAdapter.
                 startRead();
                 break;
             case R.id.refresh_address_send_iv://寄件地址刷新
+                if (locationService != null) {
+                    locationService.start();
+                } else {
+                    VikiccUtils.ToastShort(MainActivity.mIntaile, "定位失败！");
+                }
                 break;
             case R.id.refresh_address_get_iv://收件地址刷新
+                if (locationService != null) {
+                    locationService.start();
+                } else {
+                    VikiccUtils.ToastShort(MainActivity.mIntaile, "定位失败！");
+                }
                 break;
         }
     }
@@ -584,7 +594,7 @@ public class SendFragment extends BaseFragment implements AbstractSpinerAdapter.
         locationService.start();
     }
 
-    /***
+    /**
      * 定位结果回调，重写onReceiveLocation方法
      */
     private BDLocationListener mBaiduListener = new BDLocationListener() {
@@ -743,7 +753,7 @@ public class SendFragment extends BaseFragment implements AbstractSpinerAdapter.
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         total_title = (TextView) MainActivity.mIntaile.findViewById(R.id.total_top_txt_title);
         /*isPostFrag结果为true，寄件。false，收件*/
-        if (total_title.getText().toString().trim().equals("添加寄件信息")) {
+        if (total_title.getText().toString().trim().equals("添加揽件信息")) {
             isPostFrag = true;
             isSend = true;
             main_txt_sender_address.setText(MainActivity.mIntaile.address_main);
@@ -755,10 +765,13 @@ public class SendFragment extends BaseFragment implements AbstractSpinerAdapter.
             expressModel.setExpressStatus("0");
             send_ll_card.setVisibility(View.GONE);
             expressModel.setSenderTime(sdf.format(new Date()).replaceAll(" ", "T"));
-        } else if (total_title.getText().toString().trim().equals("添加收件信息")) {
+            refresh_address_send_iv.setVisibility(View.VISIBLE);
+            refresh_address_get_iv.setVisibility(View.GONE);
+        } else if (total_title.getText().toString().trim().equals("添加送件信息")) {
             isPostFrag = false;
             isSend = false;
             main_txt_consigner_address.setText(MainActivity.mIntaile.address_main);
+
             ll_main_send.setVisibility(View.GONE);
             ll_main_sends.setVisibility(View.VISIBLE);
             main_txt_postcode.setVisibility(View.GONE);
@@ -767,6 +780,8 @@ public class SendFragment extends BaseFragment implements AbstractSpinerAdapter.
             expressModel.setExpressStatus("1");
             send_ll_send2card.setVisibility(View.GONE);
             expressModel.setReceiveTime(sdf.format(new Date()).replaceAll(" ", "T"));
+            refresh_address_send_iv.setVisibility(View.GONE);
+            refresh_address_get_iv.setVisibility(View.VISIBLE);
         }
     }
 

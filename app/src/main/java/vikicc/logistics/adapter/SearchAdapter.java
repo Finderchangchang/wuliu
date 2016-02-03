@@ -121,7 +121,6 @@ public class SearchAdapter extends BaseAdapter {
         } else {
             holder.express_status.setText("未知");
         }
-
         return convertView;
     }
 
