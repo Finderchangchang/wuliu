@@ -1,0 +1,110 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_total_color"
+    android:scrollbars="none">
+    <!--寄件页面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 快递单号-->
+        <vikicc.custom.edittext.Lab_ImgEditText
+            android:id="@+id/qadd_txt_expressNum"
+            style="@style/SettingEditRadiusStyle"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:maxLength="20"
+            android:paddingLeft="60dp"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+        <!-- 类型-->
+        <vikicc.custom.edittext.Lab_ImgEditText
+            android:id="@+id/qadd_spinner_expressType"
+            style="@style/SettingEditRadiusStyle"
+            android:layout_height="45dp"
+            android:enabled="false" />
+        <LinearLayout
+            style="@style/SettingEditRadiusStyle"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/qadd_img_express"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/main_add_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="运单图" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/qadd_img_package"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/main_add_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="包裹图" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/qadd_img_idcard"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/main_add_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="证件照" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/qadd_isTure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="是否可疑"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

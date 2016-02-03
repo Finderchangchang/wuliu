@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "vikicc.logistics"
+        minSdkVersion 14
+        targetSdkVersion 22
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_5
+            targetCompatibility JavaVersion.VERSION_1_5
+        }
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile('com.mikepenz:materialdrawer:3.0.9@aar') {
+    //        transitive = true
+    //    }
+    compile 'com.android.support:design:22.2.0'
+    compile project(':afinal')
+    compile project(':customlibary')
+    compile files('libs/core-3.1.0.jar')
+    compile files('libs/baidumapapi_v3_5_0.jar')
+}

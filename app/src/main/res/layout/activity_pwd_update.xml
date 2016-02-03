@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/total_top_title"></include>
+
+    <vikicc.custom.edittext.Lab_ImgEditText
+        android:id="@+id/main_my_txt_old_password"
+        style="@style/SettingEditRadiusStyle"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="20"
+        android:paddingLeft="60dp"
+        android:textSize="20sp"
+        android:password="true"/>
+
+    <vikicc.custom.edittext.Lab_ImgEditText
+        android:id="@+id/main_my_txt_new_password"
+        style="@style/SettingEditRadiusStyle"
+        android:layout_height="45dp"
+        android:maxLength="20"
+        android:paddingLeft="60dp"
+        android:textSize="20sp"
+        android:password="true"/>
+
+    <vikicc.custom.edittext.Lab_ImgEditText
+        android:id="@+id/main_my_txt_new_again_password"
+        style="@style/SettingEditRadiusStyle"
+        android:layout_height="45dp"
+        android:maxLength="20"
+        android:paddingLeft="60dp"
+        android:textSize="20sp"
+        android:password="true"/>
+
+    <Button
+        android:id="@+id/main_my_btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="确认修改"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_no_radius_click"/>
+</LinearLayout>

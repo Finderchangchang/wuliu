@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/strongblue">
+
+    <LinearLayout
+        android:id="@+id/total_top_ll_left"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="13dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="13dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/total_top_img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tb_353" />
+
+        <TextView
+            android:id="@+id/total_top_txt_left"
+            style="@style/NormalTextSize"
+            android:text="返回" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_top_txt_title"
+        style="@style/BiggerTextSize"
+        android:layout_centerInParent="true"
+        android:text="网点" />
+
+
+    <LinearLayout
+        android:id="@+id/total_top_ll_right"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/total_top_img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/total_top_txt_right"
+            style="@style/NormalTextSize"
+            android:text="注册" />
+    </LinearLayout>
+
+</RelativeLayout>

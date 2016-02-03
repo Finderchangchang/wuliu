@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor_f2"
+    android:orientation="vertical">
+    <!--项目ip以及端口设置-->
+    <include layout="@layout/total_top_title"></include>
+
+    <EditText
+        android:id="@+id/setting_http_ip"
+        style="@style/SettingEditNoButtomRadiusStyle"
+        android:layout_marginTop="20dp"
+        android:hint="服务器" />
+
+    <EditText
+        android:id="@+id/setting_http_port"
+        style="@style/SettingEditNoTopRadiusStyle"
+        android:hint="端口" />
+
+    <Button
+        android:id="@+id/setting_http_submit"
+        style="@style/Button_No_RadiusStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="提交" />
+
+</LinearLayout>

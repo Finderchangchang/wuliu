@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">物流管理系统</string>
+    <string name="title_activity_setting_http">SettingHttpActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <array name="CodeName">
+        <item>Code_ExpressStatus</item>
+        <item>Code_ExpressType</item>
+        <item>Code_PersonnelType</item>
+    </array>
+    <array name="TableName">
+        <item>express</item>
+        <item></item>
+    </array>
+</resources>

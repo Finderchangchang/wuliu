@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!--四角都有弧度，四条线都有 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" />
+            <stroke
+                android:width="0.5dp"
+                android:color="#DFE0E0" />
+        </shape>
+    </item>
+    <item
+        android:left="0.5dp"
+        android:right="0.5dp"
+        android:top="0.5dp">
+        <shape>
+            <solid android:color="#FFFFFF" />
+            <stroke
+                android:width="0.5dp"
+                android:color="#ffffffff" />
+        </shape>
+    </item>
+</layer-list>

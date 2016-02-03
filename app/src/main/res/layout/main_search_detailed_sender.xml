@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/total_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#F9F9F9"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="寄件人"
+            android:textColor="#161616" />
+    </LinearLayout>
+
+    <include layout="@layout/total_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_cargo_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="姓名："
+            android:textColor="#6A6A6A" />
+
+        <TextView
+            android:id="@+id/main_search_detailed_txt_sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柳伟杰"
+            android:textColor="#BABABA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_search_item_express_ll_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_cargo_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="证件号码："
+            android:textColor="#6A6A6A" />
+
+        <TextView
+            android:id="@+id/main_search_detailed_txt_sender_idcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="131182999833217483"
+            android:textColor="#BABABA" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_cargo_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="联系方式："
+            android:textColor="#6A6A6A" />
+
+        <TextView
+            android:id="@+id/main_search_detailed_txt_sender_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18932145432"
+            android:textColor="#BABABA" />
+    </LinearLayout>
+</LinearLayout>

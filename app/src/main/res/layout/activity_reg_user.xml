@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor_f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/total_top_title"></include>
+
+    <EditText
+        android:id="@+id/setting_equipment_code"
+        style="@style/SettingEditNoButtomRadiusStyle"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:hint="设备编码" />
+
+    <EditText
+        android:id="@+id/setting_person_code"
+        style="@style/SettingEditLeftAndRightRadiusStyle"
+        android:hint="人员编码" />
+
+    <EditText
+        android:id="@+id/setting_company_code"
+        style="@style/SettingEditLeftAndRightRadiusStyle"
+        android:hint="公司编码" />
+
+    <EditText
+        android:id="@+id/setting_password"
+        style="@style/SettingEditNoTopRadiusStyle"
+        android:password="true"
+        android:hint="用户密码" />
+
+    <Button
+        android:id="@+id/setting_reg"
+        style="@style/Button_No_RadiusStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="注册" />
+</LinearLayout>

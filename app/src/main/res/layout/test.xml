@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新字典" />
+
+    <Button
+        android:id="@+id/btn_addExpress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加物流" />
+
+    <Button
+        android:id="@+id/update_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改密码" />
+
+    <ImageView
+        android:id="@+id/image_persontitle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#000" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAE7DF"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/total_bottom_ll_send"
+            style="@style/Main_Bottom_LinStyle">
+
+            <ImageView
+                android:id="@+id/total_bottom_img_send"
+                style="@style/Main_Bottom_BottomStyle"
+                android:src="@mipmap/frag_send_press" />
+
+            <TextView
+                android:id="@+id/total_bottom_lab_send"
+                style="@style/Main_Bottom_LabStyle"
+                android:text="寄件"
+                android:textColor="#019EDB" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/total_bottom_ll_consignee"
+            style="@style/Main_Bottom_LinStyle">
+
+            <ImageView
+                android:id="@+id/total_bottom_img_consignee"
+                style="@style/Main_Bottom_BottomStyle"
+                android:src="@mipmap/frag_consignee" />
+
+            <TextView
+                android:id="@+id/total_bottom_lab_consignee"
+                style="@style/Main_Bottom_LabStyle"
+                android:text="收件" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/total_bottom_ll_quick"
+            style="@style/Main_Bottom_LinStyle">
+
+            <ImageView
+                android:id="@+id/total_bottom_img_quick"
+                style="@style/Main_Bottom_BottomStyle"
+                android:src="@mipmap/quick_add" />
+
+            <TextView
+                android:id="@+id/total_bottom_lab_quick"
+                style="@style/Main_Bottom_LabStyle"
+                android:text="快速添加" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/total_bottom_ll_search"
+            style="@style/Main_Bottom_LinStyle">
+
+            <ImageView
+                android:id="@+id/total_bottom_img_search"
+                style="@style/Main_Bottom_BottomStyle"
+                android:src="@mipmap/frag_search" />
+
+            <TextView
+                android:id="@+id/total_bottom_lab_search"
+                style="@style/Main_Bottom_LabStyle"
+                android:text="查询" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/total_bottom_ll_my"
+            style="@style/Main_Bottom_LinStyle">
+
+            <ImageView
+                android:id="@+id/total_bottom_img_my"
+                style="@style/Main_Bottom_BottomStyle"
+                android:src="@mipmap/frag_my" />
+
+            <TextView
+                android:id="@+id/total_bottom_lab_my"
+                style="@style/Main_Bottom_LabStyle"
+                android:text="我的" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

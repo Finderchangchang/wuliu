@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!-- 快递单号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<vikicc.custom.edittext.Lab_ImgEditText-->
+        <!--android:id="@+id/main_search_txt_express_num"-->
+        <!--style="@style/SettingEditRadiusStyle"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:maxLength="20"-->
+        <!--android:textColor="@color/red"-->
+        <!--android:textSize="20sp" />-->
+        <!--<vikicc.custom.edittext.Lab_ImgEditText-->
+        <!--android:id="@+id/main_search_txt_express_tel"-->
+        <!--style="@style/SettingEditRadiusStyle"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:maxLength="20"-->
+        <!--android:textColor="@color/red"-->
+        <!--android:textSize="20sp" />-->
+        <EditText
+            android:id="@+id/main_search_txt_search"
+            style="@style/SettingEditRadiusStyle"
+            android:layout_marginTop="10dp"
+            android:hint="快递单号/手机号" />
+    </LinearLayout>
+
+
+    <vikicc.custom.refresh.LoadMoreListView
+        android:id="@+id/search_loadmore_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/main_search_mes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="无相关信息！"
+        android:visibility="gone" />
+</LinearLayout>
+

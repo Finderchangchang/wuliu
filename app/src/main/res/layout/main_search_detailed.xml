@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:orientation="vertical">
+
+        <include layout="@layout/total_top_title"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F4F4F4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#F9F9F9" />
+
+
+        <include layout="@layout/total_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                style="@style/wrap_wrap"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/ic_date" />
+
+            <TextView
+                style="@style/wrap_wrap"
+                android:layout_marginLeft="5dp"
+                android:text="快递单号："
+                android:textColor="#161616" />
+
+            <TextView
+                android:id="@+id/main_search_detailed_txt_express_deliveryid"
+                style="@style/wrap_wrap"
+                android:layout_marginLeft="5dp"
+                android:text="34523123124123"
+                android:textColor="#9B9B9B" />
+        </LinearLayout>
+
+        <include layout="@layout/total_line" />
+
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/ic_cargo_detail" />
+
+                    <TextView
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="5dp"
+                        android:text="快递状态："
+                        android:textColor="#6A6A6A" />
+
+                    <TextView
+                        android:id="@+id/main_search_detailed_txt_express_status"
+                        style="@style/wrap_wrap"
+                        android:text="寄件"
+                        android:textColor="#BABABA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_search_detailed_ll_express_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        style="@style/wrap_wrap"
+                        android:src="@mipmap/ic_cargo_detail" />
+
+                    <TextView
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="5dp"
+                        android:text="快递类型："
+                        android:textColor="#6A6A6A" />
+
+                    <TextView
+                        android:id="@+id/main_search_detailed_txt_express_type"
+                        style="@style/wrap_wrap"
+                        android:text="服饰"
+                        android:textColor="#BABABA" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_search_detailed_ll_express_id_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/wrap_wrap"
+                    android:src="@mipmap/ic_cargo_detail" />
+
+                <TextView
+                    style="@style/wrap_wrap"
+                    android:layout_marginLeft="5dp"
+                    android:text="单号类型："
+                    android:textColor="#6A6A6A" />
+
+                <TextView
+                    android:id="@+id/main_search_detailed_txt_express_id_type"
+                    style="@style/wrap_wrap"
+                    android:text="快速添加"
+                    android:textColor="#BABABA" />
+            </LinearLayout>
+            <!-- id=main_detail_ll_not_fast-->
+            <LinearLayout
+                android:id="@+id/main_detail_ll_not_fast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/main_search_detailed_ll_express_types"
+                    style="@style/match_wrap"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        style="@style/wrap_wrap"
+                        android:src="@mipmap/ic_cargo_detail" />
+
+                    <TextView
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="5dp"
+                        android:text="快递类型："
+                        android:textColor="#6A6A6A" />
+
+                    <TextView
+                        android:id="@+id/main_search_detailed_txt_express_types"
+                        style="@style/wrap_wrap"
+                        android:text="服饰"
+                        android:textColor="#BABABA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/ic_startaddress" />
+
+                    <TextView
+                        android:id="@+id/main_search_detailed_txt_express_start_address"
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="5dp"
+                        android:text="河北省保定市新市区茂业中心1205"
+                        android:textColor="#BABABA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="15dp"
+                        android:src="@mipmap/ic_endaddress" />
+
+                    <TextView
+                        android:id="@+id/main_search_detailed_txt_express_end_address"
+                        style="@style/wrap_wrap"
+                        android:layout_marginLeft="5dp"
+                        android:text="河北省深州市辰时乡田庄村"
+                        android:textColor="#BABABA" />
+                </LinearLayout>
+                <!--寄件开始-->
+                <LinearLayout
+                    android:id="@+id/main_search_detailed_ll_sender"
+                    style="@style/match_match"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/total_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#F9F9F9"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_date" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="寄件人"
+                            android:textColor="#161616" />
+                    </LinearLayout>
+
+                    <include layout="@layout/total_line" />
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="姓名："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_detailed_txt_sender_name"
+                            style="@style/wrap_wrap"
+                            android:text="柳伟杰"
+                            android:textColor="#BABABA" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main_search_item_express_ll_small"
+                        style="@style/match_wrap"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="证件号码："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_detailed_txt_sender_idcard"
+                            style="@style/wrap_wrap"
+                            android:text="131182999833217483"
+                            android:textColor="#BABABA" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="联系方式："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_detailed_txt_sender_tel"
+                            style="@style/wrap_wrap"
+                            android:text="18932145432"
+                            android:textColor="#BABABA" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--收件开始-->
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/total_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#F4F4F4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+
+                        android:background="#F9F9F9"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_date" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="收件人"
+                            android:textColor="#161616" />
+                    </LinearLayout>
+
+                    <include layout="@layout/total_line" />
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="姓名："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_item_express_receiver"
+                            style="@style/wrap_wrap"
+                            android:text="胡海珍"
+                            android:textColor="#BABABA" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="证件号码："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_item_express_receiver_idcard"
+                            style="@style/wrap_wrap"
+                            android:text="131182999833217483"
+                            android:textColor="#BABABA" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="联系方式："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_item_express_receiver_tel"
+                            style="@style/wrap_wrap"
+                            android:text="18932145432"
+                            android:textColor="#BABABA" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--寄件s-->
+                <LinearLayout
+                    android:id="@+id/main_search_detailed_ll_senders"
+                    style="@style/match_match"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/total_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#F9F9F9"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_date" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="寄件人"
+                            android:textColor="#161616" />
+                    </LinearLayout>
+
+                    <include layout="@layout/total_line" />
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="姓名："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_detailed_txt_sender_names"
+                            style="@style/wrap_wrap"
+                            android:text="柳伟杰"
+                            android:textColor="#BABABA" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="证件号码："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_detailed_txt_sender_idcards"
+                            style="@style/wrap_wrap"
+                            android:text="131182999833217483"
+                            android:textColor="#BABABA" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/match_wrap"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="15dp"
+                            android:src="@mipmap/ic_cargo_detail" />
+
+                        <TextView
+                            style="@style/wrap_wrap"
+                            android:layout_marginLeft="5dp"
+                            android:text="联系方式："
+                            android:textColor="#6A6A6A" />
+
+                        <TextView
+                            android:id="@+id/main_search_detailed_txt_sender_tels"
+                            style="@style/wrap_wrap"
+                            android:text="18932145432"
+                            android:textColor="#BABABA" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
