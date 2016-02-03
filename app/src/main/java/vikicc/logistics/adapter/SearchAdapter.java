@@ -35,6 +35,7 @@ public class SearchAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
+        String s="";
         return list.size();
     }
 
