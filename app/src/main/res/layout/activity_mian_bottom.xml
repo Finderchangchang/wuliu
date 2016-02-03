@@ -26,7 +26,7 @@
             <TextView
                 android:id="@+id/total_bottom_lab_send"
                 style="@style/Main_Bottom_LabStyle"
-                android:text="寄件"
+                android:text="揽件"
                 android:textColor="#019EDB" />
         </LinearLayout>
 
@@ -42,7 +42,7 @@
             <TextView
                 android:id="@+id/total_bottom_lab_consignee"
                 style="@style/Main_Bottom_LabStyle"
-                android:text="收件" />
+                android:text="送件" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/total_bottom_ll_quick"
